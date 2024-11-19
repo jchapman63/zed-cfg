@@ -1,0 +1,63 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "bindings": {
+      "alt-cmd-h": ["pane::ActivatePrevItem", "Down"]
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-cmd-h": ["pane::ActivatePrevItem", "Down"],
+      "alt-cmd-l": ["pane::ActivateNextItem", "Down"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "ctrl-w": "workspace::Save",
+
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "alt-cmd-h": ["pane::ActivatePrevItem", "Down"],
+      "alt-cmd-l": ["pane::ActivateNextItem", "Down"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && mode == full",
+    "bindings": {
+      "alt-cmd-l": ["pane::ActivateNextItem", "Down"]
+    }
+  },
+  {
+    "context": "Workspace && vim_mode == normal",
+    "bindings": {
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"]
+    }
+  },
+  {
+    "context": "Dock",
+    "bindings": {
+      // ... or other keybindings
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"]
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {}
+  }
+]
