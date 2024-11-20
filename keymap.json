@@ -19,7 +19,7 @@
     }
   },
   {
-    "context": "Editor && vim_mode == normal",
+    "context": "Editor",
     "bindings": {
       "ctrl-w": "workspace::Save",
 
