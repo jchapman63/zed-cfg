@@ -7,18 +7,6 @@
 // from the command palette.
 [
   {
-    "bindings": {
-      "alt-cmd-h": ["pane::ActivatePrevItem", "Down"]
-    }
-  },
-  {
-    "context": "Pane",
-    "bindings": {
-      "alt-cmd-h": ["pane::ActivatePrevItem", "Down"],
-      "alt-cmd-l": ["pane::ActivateNextItem", "Down"]
-    }
-  },
-  {
     "context": "Editor",
     "bindings": {
       "ctrl-w": "workspace::Save",
@@ -27,14 +15,14 @@
       "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
-      "alt-cmd-h": ["pane::ActivatePrevItem", "Down"],
+      "alt-cmd-h": ["pane::ActivatePreviousItem", "Down"],
       "alt-cmd-l": ["pane::ActivateNextItem", "Down"]
     }
   },
   {
-    "context": "Editor && vim_mode == normal && mode == full",
+    "context": "Workspace",
     "bindings": {
-      "alt-cmd-l": ["pane::ActivateNextItem", "Down"]
+      "alt-e": "project_panel::ToggleFocus"
     }
   },
   {
