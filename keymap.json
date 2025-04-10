@@ -11,10 +11,10 @@
     "bindings": {
       "ctrl-w": "workspace::Save",
 
-      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
       "alt-cmd-h": ["pane::ActivatePreviousItem", "Down"],
       "alt-cmd-l": ["pane::ActivateNextItem", "Down"]
     }
@@ -28,20 +28,20 @@
   {
     "context": "Workspace && vim_mode == normal",
     "bindings": {
-      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"]
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown"
     }
   },
   {
     "context": "Dock",
     "bindings": {
       // ... or other keybindings
-      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"]
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown"
     }
   },
   {

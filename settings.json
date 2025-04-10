@@ -23,7 +23,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Rosé Pine"
+    "dark": "Gruvbox Dark Hard"
   },
   "languages": {
     "YAML": {
@@ -31,14 +31,6 @@
         "external": {
           "command": "yamlfmt",
           "arguments": ["-in"]
-        }
-      }
-    },
-    "JSON": {
-      "formatter": {
-        "external": {
-          "command": "jq",
-          "arguments": [".", "-"]
         }
       }
     }
