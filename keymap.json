@@ -22,7 +22,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "alt-e": "project_panel::ToggleFocus"
+      "alt-f": "project_panel::ToggleFocus"
     }
   },
   {
